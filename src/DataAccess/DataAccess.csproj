@@ -10,10 +10,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Context\" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Azure.Identity" Version="1.11.4" />
 		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
@@ -22,6 +18,10 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Migrations\Overrides\" />
 	</ItemGroup>
 
 </Project>
